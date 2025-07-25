@@ -80,6 +80,15 @@ function App() {
     chartRef.current?.addNodes([newNode]);
   };
   
+  const addBasicApiNode = () => {
+    const newNode = { id: new Date().getTime().toString(), data: { label: '' }, position: { x: 0, y: 0 },draggable: true };
+    chartRef.current?.addNodes([newNode]);
+  };
+
+  const addCustomApiNode = () => {
+    const newNode = { id: new Date().getTime().toString(), data: { label: '' }, position: { x: 0, y: 0 },draggable: true };
+    chartRef.current?.addNodes([newNode]);
+  };
 
   return (
     <div className="p-4">
